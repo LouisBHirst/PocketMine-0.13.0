@@ -1863,7 +1863,7 @@ class Player extends Human implements CommandSender, InventoryHolder, ChunkLoade
 					break;
 				}
 
-				if(\strlen($packet->skin) !== 64 * 32 * 4 and \strlen($packet->skin) !== 64 * 64 * 4){
+				if(\strlen($packet->skin) !== 64 * 32 * 4 and \strlen($packet->skin) !== 64 * 64 * 4 and \strlen($packet->skin) !== 64){
 					$this->close("", "disconnectionScreen.invalidSkin");
 					break;
 				}
